@@ -30,7 +30,7 @@ To install and run app you will need to:
 > pip install -r **{your_directory}**/requirements.txt
 * Run database migrations
 > python **{your_directory}**/ppd_api/manage.py migrate
-* Load data from PPD file
+* Load data from PPD file. This command by default loads 100 first rows of given file. If you want to add other number of rows pass it in --rows argument. 
 > python **{your_directory}**/ppd_api/manage.py load_data --url="http://prod.publicdata.landregistry.gov.uk.s3-website-eu-west-1.amazonaws.com/pp-complete.csv"
 * Run local server
 > python **{your_directory}**/ppd_api/manage.py runserver
